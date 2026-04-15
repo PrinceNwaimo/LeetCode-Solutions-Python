@@ -1,4 +1,4 @@
-class RemoveDuplicatesfromSortedLinkedList:
+class RemoveDuplicatesfromSortedLinkedList(object):
     def deleteDuplicates(self, head):
         """
         :type head: ListNode
@@ -16,7 +16,7 @@ class RemoveDuplicatesfromSortedLinkedList:
                 if current.val in lookup:
                     prev.next = prev.next.next
                 else:
-                    lookup[current.val] = 1
+                    lookup[current.val] = True
                 prev = current
                 current = current.next
             return head
