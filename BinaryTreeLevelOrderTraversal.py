@@ -3,7 +3,8 @@ class TreeNode(object):
         self.value = value
         self.left = None
         self.right = None
-import Queue
+        
+from queue import Queue
 class BinaryTreeLevelOrderTraversal(object):
     def levelOrder(self, root):
         if root == None:
