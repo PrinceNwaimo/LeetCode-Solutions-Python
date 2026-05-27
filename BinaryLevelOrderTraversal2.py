@@ -4,7 +4,6 @@ class TreeNode(object):
         self.left = None
         self.right = None
         
-        
 from collections import Queue
 class BinaryLevelOrderTraversal2(object):
     def levelOrderBottom(self, root):
